@@ -1,5 +1,11 @@
 [
   We run a dual loop 16 * 16 times and each time we print a character.
+
+  Gotta say, the top solution is pretty damn awesome:
+
+    .+[.+]
+
+  Yup, that's it.
 ]
 
 ++++++++
