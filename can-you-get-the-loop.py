@@ -72,5 +72,5 @@ So, if we have a list of size 5 and we're looped at node #2:
 firstList = List(5, 2)  # Loop size: (5 - 2) + 1 = 4
 secondList = List(27, 12)  # Loop size: (27 - 12) + 1 = 16
 
-print loop_size(firstList.start)
-print loop_size(secondList.start)
+print(loop_size(firstList.start))
+print(loop_size(secondList.start))
