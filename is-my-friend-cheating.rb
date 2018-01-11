@@ -2,7 +2,8 @@
 
 def removNb(n)
   sum = n * (n + 1) / 2
-  (1..n).map { |x| [x, (sum - x) / (x + 1)] if (sum - x) % (x + 1) == 0 }.reject { |x| x.nil? || x[1] > n }
+#  (1..n).map { |x| [x, (sum - x) / (x + 1)] if (sum - x) % (x + 1) == 0 }.reject { |x| x.nil? || x[1] > n }
+  (1..n).each_with_object([]) { |x, res| res << [x, (sum - x) / (x + 1)] if (sum - x) % (x + 1) == 0 && (sum - x) / (x + 1) <= n }
 end
 
 p removNb(100) # []
